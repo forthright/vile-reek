@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "A vile plugin for reek.",
   "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "scripts": {
-    "postinstall": "babel -d lib -m common src",
+    "compile": "babel -d lib -m common src",
     "dev": "bin/dev",
     "test": "bin/test",
     "test-cov": "bin/test-cov"
@@ -28,6 +32,7 @@
     "mimus": "^0.1.2",
     "mocha": "^2.2.5",
     "npm-shrinkwrap": "^5.4.0",
+    "release-it": "^2.3.1",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0"
   }
