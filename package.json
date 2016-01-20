@@ -1,6 +1,6 @@
 {
   "name": "@brentlintner/vile-reek",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A vile plugin for reek.",
   "main": "lib/index.js",
   "files": [
