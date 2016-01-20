@@ -3,6 +3,12 @@
 A [vile](http://github.com/brentlintner/vile) plugin for
 [reek](https://github.com/troessner/reek).
 
+**NOTICE**
+
+This project is not actively maintained. If you want to
+help maintain the project, or if you have a better
+alternative to switch to, please open an issue and ask!
+
 ## Requirements
 
 - [nodejs](http://nodejs.org)
