@@ -1,5 +1,5 @@
 let _ = require("lodash")
-let vile = require("@brentlintner/vile")
+let vile = require("@forthright/vile")
 
 let reek = (custom_config_path) => {
   let opts = { args: [".", "--format", "json"] }
