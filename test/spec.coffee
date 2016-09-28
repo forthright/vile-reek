@@ -15,6 +15,7 @@ describe "reek", ->
 
   beforeEach ->
     mimus.stub vile, "spawn"
+    mimus.stub vile, "promise_each"
     util.setup vile
 
   it "calls reek in the cwd", (done) ->
@@ -29,6 +30,7 @@ describe "reek", ->
                             "json"
                           ]
           done()
+    return
 
   it "converts reek json to issues", ->
     reek
@@ -44,6 +46,7 @@ describe "reek", ->
           expect(create_issue("foo.rb")).to
             .eql util.all_files[0]
           done()
+    return
 
 
   it "handles an empty response", ->
@@ -71,3 +74,5 @@ describe "reek", ->
                             "json"
                           ]
             done()
+
+      return
