@@ -5,8 +5,8 @@ A [vile](http://github.com/brentlintner/vile) plugin for
 
 **NOTICE**
 
-This project is not actively maintained. If you want to
-help maintain the project, or if you have a better
+This project is not actively maintained and is outdated and/or broken.
+If you want to help maintain the project, or if you have a better
 alternative to switch to, please open an issue and ask!
 
 ## Requirements
