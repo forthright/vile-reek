@@ -37,7 +37,7 @@
     "mimus": "^0.2.3",
     "mocha": "^3.2.0",
     "npm-shrinkwrap": "^200.5.1",
-    "release-it": "^2.5.3",
+    "release-it": "^2.5.4",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0"
   },
