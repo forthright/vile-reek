@@ -15,5 +15,3 @@ dependencies:
 test:
   override:
     - npm run -s test-cov
-  post:
-    - npm run -s vile
