@@ -1,4 +1,4 @@
-# vile-reek
+# vile-reek [![CircleCI](https://circleci.com/gh/forthright/vile-reek.svg?style=svg&circle-token=0b7aefa546f2f20ae407d9578295fe5fa683c223)](https://circleci.com/gh/forthright/vile-reek)
 
 A [vile](https://vile.io) plugin for [reek](https://github.com/troessner/reek).
 
