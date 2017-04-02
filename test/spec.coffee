@@ -15,7 +15,6 @@ describe "reek", ->
 
   beforeEach ->
     mimus.stub vile, "spawn"
-    mimus.stub vile, "promise_each"
     util.setup vile
 
   it "calls reek in the cwd", (done) ->
@@ -37,25 +36,13 @@ describe "reek", ->
       .punish {}
       .should.eventually.eql util.issues
 
-  it "creates a separate list of ok issues for all rb files", (done) ->
-    reek
-      .punish {}
-      .should.be.fulfilled.notify ->
-        setTimeout ->
-          create_issue = vile.promise_each.args[0][2]
-          expect(create_issue("foo.rb")).to
-            .eql util.all_files[0]
-          done()
-    return
-
-
   it "handles an empty response", ->
     vile.spawn.reset()
     vile.spawn.returns new Promise (resolve) -> resolve ""
 
     reek
       .punish {}
-      .should.eventually.eql util.all_files
+      .should.eventually.eql []
 
   describe "config", ->
     it "supports it as a custom reek config file path", (done) ->

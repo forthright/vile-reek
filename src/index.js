@@ -12,13 +12,18 @@ let reek = (custom_config_path) => {
 
   return vile
     .spawn("reek", opts)
-    .then((stdout) => stdout ? JSON.parse(stdout) : [])
+    .then((data) => {
+      let stdout = _.get(data, "stdout")
+      return stdout ? JSON.parse(stdout) : []
+    })
 }
 
-let start = (issue) => { return { line: issue.lines[0] } }
+let start = (issue) => {
+  return { line: issue.lines[0] }
+}
 
 let end = (issue) => issue.lines.length > 1 ?
-  { line: issue.lines[issue.lines.length - 1] } : undefined
+  { line: issue.lines[issue.lines.length - 1] } : {}
 
 let message = (issue) =>
   `${issue.message} (${issue.smell_category}/` +
@@ -26,9 +31,8 @@ let message = (issue) =>
 
 let vile_issue = (issue) =>
   vile.issue({
-    type: vile.STYL,
+    type: vile.MAIN,
     path: issue.source,
-    title: message(issue),
     message: message(issue),
     signature: "reek::" + message(issue),
     where: {
