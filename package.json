@@ -24,7 +24,7 @@
     "dev": "bin/dev",
     "test": "bin/test",
     "test-cov": "bin/test-cov",
-    "vile": "vile p -usi --nodecorations",
+    "vile": "vile p -u -n",
     "release-it": "release-it"
   },
   "keywords": [
@@ -49,9 +49,9 @@
     "release-it": "^2.7.1",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
-    "vile": ">=0.14.0"
+    "vile": "^0.15.0"
   },
   "peerDependencies": {
-    "vile": ">=0.13.0"
+    "vile": ">=0.15.0"
   }
 }
