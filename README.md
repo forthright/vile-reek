@@ -1,6 +1,7 @@
 # vile-reek
 
-A [vile](https://vile.io) plugin for [reek](https://github.com/troessner/reek).
+A [Vile](https://vile.io) plugin for identifying common style and
+maintainability issues in your Ruby code (via [Reek](https://github.com/troessner/Reek)).
 
 **NOTICE**
 
@@ -10,10 +11,8 @@ alternative to switch to, please open an issue and ask!
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
-- [ruby](http://ruby-lang.org)
-- [rubygems](http://rubygems.org)
+- [Node.js](http://nodejs.org)
+- [Ruby](http://ruby-lang.org)
 
 ## Installation
 
@@ -24,7 +23,7 @@ Example:
     npm i -D vile vile-reek
     gem install reek
 
-Note: A good strategy is to use [bundler](http://bundler.io).
+Note: A good strategy is to use [Bundler](http://bundler.io).
 
 ## Config
 
@@ -35,7 +34,7 @@ reek:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -62,13 +61,7 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-### Maintainers
-
-- Nothing to see here...
 
 ## Architecture
 
@@ -77,10 +70,10 @@ a JSON CLI output that is currently used until a more ideal
 IPC option is implemented.
 
 - `bin` houses any shell based scripts
-- `src` is es6+ syntax compiled with [babel](https://babeljs.io)
+- `src` is es6+ syntax compiled with [Babel](https://babeljs.io)
 - `lib` generated js library
 
-## Hacking
+## Developing
 
     cd vile-reek
     npm install
