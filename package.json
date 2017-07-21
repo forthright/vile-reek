@@ -1,6 +1,6 @@
 {
   "name": "vile-reek",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Identify common style and maintainability issues in your Ruby code.",
   "main": "lib/index.js",
   "files": [
