@@ -47,7 +47,7 @@
     "mocha": "^3.4.2",
     "npm-shrinkwrap": "^200.5.1",
     "release-it": "^2.8.0",
-    "sinon": "^2.3.5",
+    "sinon": "^3.0.0",
     "sinon-chai": "^2.11.0",
     "vile": "^0.18.0",
     "vile-ncu": "^0.3.0",
